@@ -1,52 +1,12 @@
 import streamlit as st
 import pandas as pd
-import numpy as np 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-
 # Library
-from sklearn.metrics import make_scorer, accuracy_score,precision_score
 from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score ,precision_score,recall_score,f1_score
-from sklearn.model_selection import KFold,train_test_split,cross_val_score
-
+from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
-
-# import library yang di butuhkan
-import requests
-from bs4 import BeautifulSoup
-import csv
-
-
-# Stopwords 
-import nltk
-# from nltk.corpus import stopwords
-# from nltk.tokenize import sent_tokenize, word_tokenize
-# from nltk.corpus import stopwords
-nltk.download('punkt')
-# Download kamus stop words
-nltk.download('stopwords')
-
-# from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
-
-# Library Ekstaksi Fitur
-# from sklearn.preprocessing import MultiLabelBinarizer
-# from sklearn.preprocessing import OneHotEncoder
-from sklearn.feature_extraction.text import CountVectorizer
-# LDA
-from sklearn.decomposition import LatentDirichletAllocation
-import os
-
 # Klasifikasi
-from sklearn.ensemble import RandomForestClassifier, StackingClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn import metrics
-from sklearn.model_selection import train_test_split
-from sklearn import neighbors, datasets
 import pickle
 
 

@@ -4,6 +4,5 @@ matplotlib
 sklearn
 scikit-learn
 seaborn
-streamlit
+streamlit == 1.24.0
 opencv-python-headless
-nltk
